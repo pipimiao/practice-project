@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .noviland {
+      height: 100px;
+      width: 100px;
+      margin: 0 auto;
+    }
+
+    .huangsf {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+  </div>
+  <script>
+    const elementDiv = document.getElementById('container');
+    const DivChils1 = document.createElement('div');
+    DivChils1.setAttribute('class','noviland huangsf');
+    // DivChils1.setAttribute('class','huangsf');
+    DivChils1.appendChild(document.createElement('span'));
+    const div1 = document.createElement('div');
+    div1.setAttribute('style','background-color:red;height:50px;width:50px');
+    elementDiv.appendChild(DivChils1);
+    elementDiv.appendChild(div1);
+
+
+    
+    
+
+  </script>
+</body>
+</html>

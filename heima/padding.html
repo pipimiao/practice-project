@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css"></style>
+	<script>
+		var obj = {
+			id:'awsome',
+			cool:function coolFun(){
+				console.log(this.id);
+				console.log(this);
+			}
+		};
+		var id = "not awsome";
+		obj.cool();
+		setTimeout(obj.cool,2000);
+	</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<div>shenme dong xi dou bu zhidao </div>
+	<div>shenme dong xi dou bu zhidao </div>
+	<div>shenme dong xi dou bu zhidao </div>
+	<ul></ul>
+</html>

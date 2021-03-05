@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container{
+			display: grid;
+			grid-template-rows: repeat(4,60px);
+			grid-template-columns: 100px 300px 200px;
+			/*grid-auto-flow: column;*/
+			
+		}
+		.container>div:nth-child(1){
+			grid-row-start: 1;
+			grid-row-end: 5;
+			background-color: pink;
+		}
+		.sub-container{
+			display: grid;
+			grid-template-rows: repeat(4,15px);
+			grid-template-columns: repeat(2,150px);
+			/*background-color: blue;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	  <div>图片</div>
+	  <div class="sub-container">
+	  	<div>1</div>
+	  	<div>1</div>
+	  	<div>1</div>
+	  	<div>1</div>
+	  	<div>1</div>
+	  	<div>1</div>
+	  	<div>1</div>
+	  	<div>1</div>
+	  </div>
+	  <div>价格</div>
+	</div>
+</body>
+</html>

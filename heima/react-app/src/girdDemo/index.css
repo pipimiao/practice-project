@@ -1,0 +1,23 @@
+.container{
+  border:1px solid silver;
+  height: max-content;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px max-content 50px;
+  row-gap: 10px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.container>div:nth-child(3){
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* background-color: pink; */
+}
+
+.container>div:nth-child(3) div{
+  height: 160px;
+  width: 200px;
+  border: 1px solid red;
+}
